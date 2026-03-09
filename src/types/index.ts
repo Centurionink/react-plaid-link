@@ -175,6 +175,13 @@ export type PlaidHandlerSubmissionData = {
   date_of_birth: string | null;
 }
 
+export interface PlaidLinkLogEntry {
+  type: 'event';
+  eventName: PlaidLinkStableEvent | string;
+  metadata: PlaidLinkOnEventMetadata;
+  timestamp: string; // ISO 8601
+}
+
 export interface PlaidHandler {
   open: () => void;
   submit: (data: PlaidHandlerSubmissionData) => void;
