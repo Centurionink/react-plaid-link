@@ -1,5 +1,7 @@
 /dist/
 /lib/
 /node_modules/
+node_modules/
 npm-debug.log
 /web3/
+examples/oauth-app/server/data/
